@@ -22,8 +22,8 @@ fn part1(inp: &[u32]) -> u32 {
 
 fn part2(inp: &[u32]) -> u32 {
     for (m, i) in inp.iter().enumerate() {
-        for (n, j) in inp.iter().enumerate().skip(m+1) {
-            for k in inp.iter().skip(n+1) {
+        for (n, j) in inp.iter().enumerate().skip(m + 1) {
+            for k in inp.iter().skip(n + 1) {
                 if i + j + k == 2020 {
                     return i * j * k;
                 }
