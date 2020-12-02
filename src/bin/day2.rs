@@ -17,9 +17,7 @@ fn parse(inp: impl Iterator<Item = String>) -> impl Iterator<Item = InputTuple> 
             .skip(start.len() + 1 + end.len() + 4)
             .collect::<String>();
 
-        let start = start.parse::<usize>().unwrap();
-        let end = end.parse().unwrap();
-        (start, end, car, inp)
+        (start.parse().unwrap(), end.parse().unwrap(), car, inp)
     })
 }
 
