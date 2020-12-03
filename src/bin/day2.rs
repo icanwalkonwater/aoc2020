@@ -66,8 +66,8 @@ fn part2(inp: impl Iterator<Item = InputTuple>) -> usize {
 
 fn main() {
     let inp = parse_nom(get_input_line_by_line(2));
-
-    // println!("Part 1: {}", part1(inp));
+    println!("Part 1: {}", part1(inp));
+    let inp = parse_nom(get_input_line_by_line(2));
     println!("Part 2: {}", part2(inp));
 }
 
